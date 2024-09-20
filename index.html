@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book-library</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="sidebar">
+        <h1>Book-library</h1>
+        <button class="add-book" type="button">Add book</button>
+    </div>
+    <dialog id="book-dialog">
+        <h1>New entry</h1>
+
+        <form id="book-form" action="#" method="dialog">
+            <div class="input-container">
+                <label for="book-title">Title</label>
+                <input autofocus required type="text" name="book-title" id="book-title">
+            </div>
+
+            <div class="input-container">
+                <label for="book-author">Author</label>
+                <input required type="text" name="book-author" id="book-author">
+            </div>
+
+            <div class="input-container">
+                <label for="book-pages">Number of pages</label>
+                <input required min="1" type="number" name="book-pages" id="book-pages">
+            </div>
+
+            <fieldset class="read-container">
+                <legend>Have you read the book?</legend>
+              
+                <div>
+                  <input checked type="radio" name="read" id="read" value="read">
+                  <label for="read">Yes</label>
+                </div>
+              
+                <div>
+                  <input type="radio" name="read" id="not-read" value="not read">
+                  <label for="not-read">No</label>
+                </div>
+              </fieldset>
+
+            <div class="form-buttons" id="form-buttons">
+                <button class="primary-button" id="close-button" >Close</button>
+                <button class="primary-button" id="submit-button" type="submit">Add new book</button>
+            </div>
+        </form>
+    </dialog>
+
+    <div class="main-area">
+        <div class="book">
+            <h2 class="book-heading">somebook</h2>
+            <p class="author-name">author:<span class="author-val"> somename</span></p>
+            <p class="pages">author:<span class="page-val"> somename</span></p>
+            <div class="buttons-div">
+                <button id="read-button" type="button">read</button>
+                <button id="remove-button" type="button">remove</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

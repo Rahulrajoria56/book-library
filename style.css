@@ -1,0 +1,128 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html{
+    height: 100%;
+    width: 100%;
+}
+body{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 100%;
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 100px;
+    gap: 25px;
+    background-color: rgba(51, 197, 246, 0.885);
+}
+
+.main-area{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 150px;
+    padding: 30px;
+    gap: 30px;
+    background-color: rgba(220, 217, 217, 0.879);
+}
+.add-book{
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px;
+    background-color: rgb(229, 229, 16);
+    border-radius: 8px;
+}
+.book{
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    background-color: rgba(240, 174, 50, 0.918);
+    color: white;
+    padding: 15px;
+    gap: 8px;
+}
+.book>p{
+    font-size: 1rem;
+    font-weight: 700;
+}
+.book>p>span{
+    font-weight: 300;
+}
+.buttons-div{
+    display: flex;
+    width: 150px;
+    height: 30px;
+    justify-content: space-between;
+    gap: 10px;
+    align-content: center;
+}
+.buttons-div>button{
+    border-radius: 12px;
+    flex: 1;
+    font-weight: bold;
+    padding: 5px;
+    font-size: 1rem;
+    background-color: rgb(41, 131, 249);
+    color: white;
+}
+#book-dialog{
+    position: fixed;
+    top: 20%;
+    bottom: 50%;
+    left: 50%;
+    right: 50%;
+    width: 400px;
+    height: 450px;
+    padding: 15px;
+}
+#book-form{
+    margin-top: 10px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    
+}
+#book-form>div{
+    display: grid;
+    gap: 5px;
+    column-gap: 20px;
+}
+#book-form>div>input{
+    height: 30px;
+    font-size: 0.90rem;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 8px;
+    background-color: rgba(206, 206, 206, 0.47);
+}
+.read-container{
+    display: grid;
+    height: 70px;
+    gap: 2px;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+#form-buttons{
+    column-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 80px;
+    height: 30px;
+}
+#form-buttons>button{
+    font-weight: bold;
+    border-radius: 9px;
+    padding: 5px;
+    background-color: rgba(255, 255, 28, 0.925);
+}
