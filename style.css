@@ -70,10 +70,12 @@ body{
 }
 .buttons-div>button{
     border-radius: 12px;
-    flex: 1;
+    font-size: 1rem;
+    width: fit-content;
+    text-wrap: nowrap;
+    height: fit-content;
     font-weight: bold;
     padding: 5px;
-    font-size: 1rem;
     background-color: rgb(41, 131, 249);
     color: white;
 }
